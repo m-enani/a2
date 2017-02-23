@@ -50,5 +50,28 @@
   "price": "high",
   "dining": "in",
   "wait_time": 30
+  },
+
+  "Andaz Indian Restaurant":{
+  "id":5,
+  "name": "Andaz Indian Restaurant",
+  "type": "indian",
+  "address": "12 W University Ave, Gainesville, FL 32601",
+  "price": "medium",
+  "dining": "in",
+  "image": "https://s3-media3.fl.yelpcdn.com/bphoto/C_rm4TXlz-ARudzxVhQn3Q/o.jpg",
+  "wait_time": 5
+  },
+
+  "Twisted Peacock":{
+  "id":6,
+  "name": "Twisted Peacock",
+  "type": "indian",
+  "address": "12 W University Ave, Gainesville, FL 32601",
+  "price": "high",
+  "dining": "in",
+  "image":"",
+  "wait_time": 5
   }
+
 }

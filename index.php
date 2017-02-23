@@ -41,9 +41,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-12">
-            <h2>Cuisine</h2>
-            <div class="form-group">
+          <div class="col-md-6">
               <label for="cusinieType">Cuisine:</label>
               <select name="cuisineType" class="form-control" id="cusinieType">
                 <option value="any">Any</option>
@@ -54,7 +52,6 @@
                 <option value="mexican">Mexican</option>
                 <option value="mediterranean">Mediterranean</option>
               </select>
-            </div>
           </div>
         </div>
         <div class="row">
@@ -84,48 +81,50 @@
             <input type='submit' class='btn btn-primary btn-small'>
           </div>
         </div>
-      </div>
     </form>
 
-    <?php if($errors): ?>
+    <div class="row">
+      <div class="col-md-12">
+        <?php if($errors): ?>
 
-  		<div class='alert alert-danger'>
-  			<ul>
-  				<?php foreach($errors as $error): ?>
-  					<li><?=$error?></li>
-  				<?php endforeach; ?>
-  			</ul>
-  		</div>
+      		<div class='alert alert-danger'>
+      			<ul>
+      				<?php foreach($errors as $error): ?>
+      					<li><?=$error?></li>
+      				<?php endforeach; ?>
+      			</ul>
+      		</div>
 
-  	<?php elseif($form->isSubmitted()): ?>
+      	<?php elseif($form->isSubmitted()): ?>
 
-          <div class='alert alert-info'>
-            Results for: <br>
-            Cuisine: <?=ucfirst($cuisineType)?><br>
-            Budget: <?=$budget?><br>
-            Dining: <?=ucfirst($optInOut)?><br>
-            Maximum Wait: <?=$waitTime?> minutes<br>
-          </div>
+              <div class='alert alert-info'>
+                Results for: <br>
+                Cuisine: <?=ucfirst($cuisineType)?><br>
+                Budget: <?=ucfirst($budget)?><br>
+                Dining: <?=ucfirst($optInOut)?><br>
+                Maximum Wait: <?=$waitTime?> minutes<br>
+              </div>
 
-  	    <?php if(!$haveResults): ?>
-  	        No restaurants found
-  	    <?php endif; ?>
+      	    <?php if(!$haveResults): ?>
+      	        No restaurants found
+      	    <?php endif; ?>
 
-  	    <?php foreach($restaurants as $type => $restaurant): ?>
-  	        <div class='restaurant'>
-  	            <h2><?=$restaurant['name']?></h2>
+      	    <?php foreach($restaurants as $type => $restaurant): ?>
+      	        <div class='restaurant'>
+      	            <h2><?=$restaurant['name']?></h2>
 
-                <img src = <?=$restaurant['image']?> alt=<?=$restaurant['name']?>>
+                    <img src = <?=$restaurant['image']?> alt=<?=$restaurant['name']?>>
 
-  	            Cuisine Type: <?=ucfirst($restaurant['type'])?><br>
+      	            Cuisine Type: <?=ucfirst($restaurant['type'])?><br>
 
-  	            Address: <?=$restaurant['address']?>
-  	        </div>
+      	            Address: <?=$restaurant['address']?>
+      	        </div>
 
-  	    <?php endforeach; ?>
+      	    <?php endforeach; ?>
 
-  	<?php endif; ?>
-
-
+      	<?php endif; ?>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
