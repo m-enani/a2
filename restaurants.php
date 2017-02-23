@@ -23,14 +23,20 @@ class Restaurants {
     /**
 	*
 	*/
-    public function getByType(string $type) {
+    public function getByType(string $type, $budget, string $optInOut, string $waitTime) {
         $filteredRestaurants = [];
         foreach($this->restaurants as $restaurant) {
 
-            $match = $restaurant['type'] == $type;
-
-            if($match)
-                $filteredRestaurants[] = $restaurant;
+          // return all list if default options are selected
+          // if ($type == 'any' && $budget == 'any' && $optInOut && $waitTime == ''){
+          //   $filteredRestaurants[] = $restaurant;
+          // }
+          if ($type == 'any' && $restaurant['price'] == $budget && $restaurant['dining'] == $optInOut && ($restaurant['wait_time']  == 0 || $restaurant['wait_time'] < $waitTime)){
+            $filteredRestaurants[] = $restaurant;
+          }
+          else if ($restaurant['type'] == $type  && $restaurant['price'] == $budget && $restaurant['dining'] == $optInOut && ($restaurant['wait_time']  == 0 || $restaurant['wait_time'] < $waitTime)){
+            $filteredRestaurants[] = $restaurant;
+          }
 
         }
         return $filteredRestaurants;

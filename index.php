@@ -60,22 +60,22 @@
         <div class="row">
           <div class="col-md-12">
             <label>Budget:</label><br>
-            <label class="checkbox-inline"><input type="checkbox" value="high">High</label>
-            <label class="checkbox-inline"><input type="checkbox" value="medium">Medium</label>
-            <label class="checkbox-inline"><input type="checkbox" value="low">Low</label>
+            <label class="radio-inline"><input type="radio" name="budget" value="high">High</label>
+            <label class="radio-inline"><input type="radio" name="budget" value="medium">Medium</label>
+            <label class="radio-inline"><input type="radio" name="budget" value="low">Low</label>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
             <label>Dine in/Take out?</label><br>
-            <label class="radio-inline"><input type="radio" name="optinout">Dine-in</label>
-            <label class="radio-inline"><input type="radio" name="optinout">Take-out</label>
+            <label class="radio-inline"><input type="radio" name="optinout" value="in">Dine-in</label>
+            <label class="radio-inline"><input type="radio" name="optinout" value="out">Take-out</label>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
             <label for="usr">Maximum Wait Time (mins)</label>
-            <input type="text" class="form-control" id="usr">
+            <input type="text" class="form-control" name ="waitTime" id="usr">
           </div>
         </div>
         <div class="row">
@@ -99,7 +99,13 @@
 
   	<?php elseif($form->isSubmitted()): ?>
 
-          <div class='alert alert-info'>Searched for: <?=$cuisineType?></div>
+          <div class='alert alert-info'>
+            Results for: <br>
+            Cuisine: <?=ucfirst($cuisineType)?><br>
+            Budget: <?=$budget?><br>
+            Dining: <?=ucfirst($optInOut)?><br>
+            Maximum Wait: <?=$waitTime?> minutes<br>
+          </div>
 
   	    <?php if(!$haveResults): ?>
   	        No restaurants found
@@ -109,7 +115,9 @@
   	        <div class='restaurant'>
   	            <h2><?=$restaurant['name']?></h2>
 
-  	            Name: <?=$restaurant['name']?><br>
+                <img src = <?=$restaurant['image']?> alt=<?=$restaurant['name']?>>
+
+  	            Cuisine Type: <?=ucfirst($restaurant['type'])?><br>
 
   	            Address: <?=$restaurant['address']?>
   	        </div>

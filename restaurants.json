@@ -5,8 +5,9 @@
   "name": "Indian Cuisine",
   "type": "indian",
   "address": "3550 SW 34th St., Gainesville, FL 32608",
-  "price": "Moderate",
-  "dining": "In",
+  "price": "medium",
+  "dining": "in",
+  "image": "https://s3-media3.fl.yelpcdn.com/bphoto/C_rm4TXlz-ARudzxVhQn3Q/o.jpg",
   "wait_time": 5
   },
 
@@ -15,8 +16,9 @@
   "name": "Yummy House",
   "type": "chinese",
   "address": "3102 SW 34th St, Gainesville, FL 32608",
-  "price": "Moderate",
-  "dining": "In",
+  "price": "medium",
+  "dining": "in",
+  "image":"https://i.embed.ly/1/display/resize?key=1e6a1a1efdb011df84894040444cdc60&url=http%3A%2F%2Fpbs.twimg.com%2Fmedia%2FBw-TVx0IcAIQBIH.jpg",
   "wait_time": 10
   },
 
@@ -25,8 +27,8 @@
   "name": "China Wok",
   "type": "chinese",
   "address": "5705 SW 75th St, Gainesville, FL 32608",
-  "price": "Cheap",
-  "dining": "Out",
+  "price": "low",
+  "dining": "out",
   "wait_time": 0
   },
 
@@ -35,8 +37,8 @@
   "name": "Mahzu Sushi & Grill",
   "type": "japanese",
   "address": "5150 SW 34th St, Gainesville, FL 32608",
-  "price": "Expensive",
-  "dining": "In",
+  "price": "high",
+  "dining": "in",
   "wait_time": 15
   },
 
@@ -45,8 +47,8 @@
   "name": "Southern Charm Kitchen",
   "type": "american",
   "address": "1714 SE Hawthorne Rd, Gainesville, FL 32641",
-  "price": "Expensive",
-  "dining": "In",
+  "price": "high",
+  "dining": "in",
   "wait_time": 30
   }
 }
