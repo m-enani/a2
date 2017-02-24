@@ -29,7 +29,8 @@
   "address": "5705 SW 75th St, Gainesville, FL 32608",
   "price": "low",
   "dining": "out",
-  "wait_time": 0
+  "image": "https://s3-media4.fl.yelpcdn.com/bphoto/uDDTD_FAcZUg_ubbYjgMFg/o.jpg",
+  "wait_time": 5
   },
 
   "Mahzu Sushi & Grill":{
@@ -39,6 +40,7 @@
   "address": "5150 SW 34th St, Gainesville, FL 32608",
   "price": "high",
   "dining": "in",
+  "image":"https://s3-media2.fl.yelpcdn.com/bphoto/B41m9m5c4uxP9l1ZtTt6dA/o.jpg",
   "wait_time": 15
   },
 
@@ -49,6 +51,7 @@
   "address": "1714 SE Hawthorne Rd, Gainesville, FL 32641",
   "price": "high",
   "dining": "in",
+  "image": "http://www.gainesvillecra.com/media/zoo/images/SouthernCharm_113c41c9ff5f01374d1134c94022b4a6.jpg",
   "wait_time": 30
   },
 
@@ -59,7 +62,7 @@
   "address": "12 W University Ave, Gainesville, FL 32601",
   "price": "medium",
   "dining": "in",
-  "image": "https://s3-media3.fl.yelpcdn.com/bphoto/C_rm4TXlz-ARudzxVhQn3Q/o.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Andaz_Indian_Restaurant,_Gainesville_FL.JPG/1024px-Andaz_Indian_Restaurant,_Gainesville_FL.JPG",
   "wait_time": 5
   },
 
@@ -70,8 +73,122 @@
   "address": "12 W University Ave, Gainesville, FL 32601",
   "price": "high",
   "dining": "in",
-  "image":"",
+  "image":"https://media-cdn.tripadvisor.com/media/photo-s/0c/94/ba/c4/enjoy-the-bollywood-wall.jpg",
   "wait_time": 5
+  },
+
+  "Relish":{
+  "id":7,
+  "name": "Relish",
+  "type": "american",
+  "address": "1702 W University Ave C, Gainesville, FL 32603",
+  "price": "low",
+  "dining": "out",
+  "image":"http://www.gainesville.com/storyimage/LK/20140129/ENTERTAINMENT/604159997/AR/0/AR-604159997.jpg",
+  "wait_time": 5
+  },
+
+  "Mildred's Big City Food":{
+  "id":8,
+  "name": "Mildred's Big City Food",
+  "type": "american",
+  "address": "3445 W University Ave, Gainesville, FL 32607",
+  "price": "high",
+  "dining": "in",
+  "image":"http://jmacontractinginc.com/wp-content/uploads/2012/08/mildreds-big-city-food-exterior.jpg",
+  "wait_time": 20
+  },
+
+
+  "Small House":{
+  "id":9,
+  "name": "Small House",
+  "type": "chinese",
+  "address": "1120 W University Ave Gainesville, FL 32601",
+  "price": "high",
+  "dining": "in",
+  "image":"https://s3-media3.fl.yelpcdn.com/bphoto/VZGX9FPx5Jpih02YnfAB6Q/o.jpg",
+  "wait_time": 15
+  },
+
+  "Dragonfly":{
+  "id":10,
+  "name": "Dragonfly",
+  "type": "japanese",
+  "address": "201 SE 2nd Ave #104, Gainesville, FL 32601",
+  "price": "high",
+  "dining": "in",
+  "image":"http://jmacontractinginc.com/wp-content/uploads/2012/08/dragonfly-sushi-and-sake-exterior.jpg",
+  "wait_time": 35
+},
+
+  "Momoyaki":{
+  "id":11,
+  "name": "Momoyaki",
+  "type": "japanese",
+  "address": "1624 SW 13th St, Gainesville, FL 32608",
+  "price": "medium",
+  "dining": "out",
+  "image":"https://media-cdn.tripadvisor.com/media/photo-s/08/4e/d1/d2/momoyaki.jpg",
+  "wait_time": 15
+  },
+
+  "Falafel King":{
+  "id":12,
+  "name": "Falafel King",
+  "type": "mediterranean",
+  "address": "3252 SW 35th Blvd, Gainesville, FL 32608",
+  "price": "low",
+  "dining": "out",
+  "image":"https://activerain-store.s3.amazonaws.com/image_store/uploads/2/5/5/9/4/ar122953653449552.JPG",
+  "wait_time": 15
+  },
+
+  "The Spot":{
+  "id":13,
+  "name": "The Spot",
+  "type": "mediterranean",
+  "address": "16 NW 18th St #160, Gainesville, FL 32603",
+  "price": "low",
+  "dining": "out",
+  "image":"https://s3-media4.fl.yelpcdn.com/bphoto/QM8gDuNyvFndvM3Q9fKQBA/o.jpg",
+  "wait_time": 10
+  },
+
+  "La Tienda":{
+  "id":15,
+  "name": "La Tienda",
+  "type": "mexican",
+  "address": "2204 SW 13th St, Gainesville, FL 32608",
+  "price": "low",
+  "dining": "in",
+  "image":"http://static.panoramio.com/photos/large/53661287.jpg",
+  "wait_time": 25
+  },
+
+  "Chuy's":{
+  "id":16,
+  "name": "Chuy's",
+  "type": "mexican",
+  "address": "3410 SW Archer Rd, Gainesville, FL 32608",
+  "price": "medium",
+  "dining": "in",
+  "image":"http://s3.amazonaws.com/citybuzz/2014/11/gainesville-restaurants/gainesville-restaurants-11.jpg",
+  "wait_time": 20
+  },
+
+  "Tijuana Flats":{
+  "id":17,
+  "name": "Tijuana Flats",
+  "type": "mexican",
+  "address": "3414 SW Archer Rd, Gainesville, FL 32608",
+  "price": "low",
+  "dining": "out",
+  "image":"https://media-cdn.tripadvisor.com/media/photo-s/02/bb/19/8e/tijuana-flats.jpg",
+  "wait_time": 15
   }
+
+
+
 
 }

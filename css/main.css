@@ -1,45 +1,66 @@
-/*
-Created by: Mahmoud Enani
-Class: CSCI E-15
-Assignment: Assignment 1
-Completed: 02/09/2017
-Purpose: main stylesheet for single page bio site
-*/
-
 h1 {
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #581F18;
+  color: #ffffff;
 }
 
 h1, h2 {
   text-align: center;
-  color: #042A2B;
 }
 
 h2{
   padding-top: 15px;
 }
 
-/*.container-fluid {
-  margin-top: 15px;
-	width:70%;
-	min-width:600px;
-	margin-bottom:50px;
-  background-color: #ffffff;
-  border-radius: 1.5%;
-}*/
-
-img {
-  display:block;
-  margin:auto;
-  width:35%;
-}
-
 body {
   color: #042A2B;
+  /*background-color: #202C59;*/
+  background-image: url("../back_image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.container-fluid {
+  /*margin-top: 15px;*/
+	max-width: 600px;
+	/*min-width:600px;*/
+  min-height:100vh;
+	/*margin-bottom:50px;*/
+  background-color: #ffffff;
+  /*border-radius: 1.5%;*/
 }
 
 .row {
   margin-left: 30px;
   margin-right: 30px;
-  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.lunchOptions {
+  background-color: #D95D39;
+  color: #ffffff;
+  font-size: large;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#toTop {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#topImage {
+  display:block;
+  margin:auto;
+  width:50%;
+  margin-bottom: 20px;
+}
+
+img {
+  display:block;
+  margin:auto;
+  width:100%;
 }

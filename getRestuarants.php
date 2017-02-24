@@ -3,6 +3,7 @@ require('restaurants.php');
 require('Form.php');
 # Instantiate the objects we'll need
 $restaurant = new Restaurants('restaurants.json');
+$counter = 1; # present option number on view
 $form = new DWA\Form($_GET);
 $errors = [];
 if($form->isSubmitted()) {

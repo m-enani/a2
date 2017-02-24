@@ -31,14 +31,24 @@ class Restaurants {
           // if ($type == 'any' && $budget == 'any' && $optInOut && $waitTime == ''){
           //   $filteredRestaurants[] = $restaurant;
           // }
-          if ($type == 'any' && $restaurant['price'] == $budget && $restaurant['dining'] == $optInOut && ($restaurant['wait_time']  == 0 || $restaurant['wait_time'] < $waitTime)){
+          if ($type == 'any' && $restaurant['price'] == $budget && $restaurant['dining'] == $optInOut && ($restaurant['wait_time']  == 0 || $restaurant['wait_time'] <= $waitTime)){
             $filteredRestaurants[] = $restaurant;
           }
-          else if ($restaurant['type'] == $type  && $restaurant['price'] == $budget && $restaurant['dining'] == $optInOut && ($restaurant['wait_time']  == 0 || $restaurant['wait_time'] < $waitTime)){
+          else if ($restaurant['type'] == $type  && $restaurant['price'] == $budget && $restaurant['dining'] == $optInOut && ($restaurant['wait_time']  == 0 || $restaurant['wait_time'] <= $waitTime)){
             $filteredRestaurants[] = $restaurant;
           }
 
         }
+
+        // sort the array by restaurant name
+        function sortResturants($a,$b)
+        {
+        if ($a['name']==$b['name']) return 0;
+        return ($a['name']<$b['name'])?-1:1;
+        }
+
+        usort($filteredRestaurants, "sortResturants");
+
         return $filteredRestaurants;
     }
 } # end of class
